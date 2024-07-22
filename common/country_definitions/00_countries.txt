@@ -1,0 +1,11 @@
+﻿#Base Country
+TEST = {
+	color = { 255 255 255 }
+	
+	country_type = unrecognized
+
+	tier = principality
+	
+	cultures = {  }
+	capital = STATE_
+}

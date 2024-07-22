@@ -1,0 +1,446 @@
+﻿building_angkor_wat = {
+	building_group = bg_monuments
+	texture = "gfx/interface/icons/building_icons/angkor_wat.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "angkor_wat_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { "building_construction_3x3_entity" }
+	entity_constructed = { "wonder_angkorwat_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 5
+	}
+	
+	production_method_groups = {
+		pmg_base_building_angkor_wat
+	}
+	
+	possible = {
+		state_region = s:STATE_CAMBODIA
+	}
+	
+	required_construction = construction_cost_monument
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+building_forbidden_city = {
+	building_group = bg_monuments
+	texture = "gfx/interface/icons/building_icons/forbidden_city.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "forbidden_city_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { "building_construction_3x3_entity" }
+	entity_constructed = { "wonder_forbidden_city_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 4
+	}
+	
+	production_method_groups = {
+		pmg_base_building_forbidden_city
+	}
+	
+	possible = {
+		state_region = s:STATE_BEIJING
+	}
+	
+	required_construction = construction_cost_monument
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+building_hagia_sophia = {
+	building_group = bg_monuments
+	texture = "gfx/interface/icons/building_icons/hagia_sophia.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "hagia_sophia_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { "building_construction_3x3_entity" }
+	entity_constructed = { "wonder_hagia_sophia_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 3
+	}
+	
+	production_method_groups = {
+		pmg_base_building_hagia_sophia
+	}
+	
+	possible = {
+		state_region = s:STATE_EASTERN_THRACE
+	}
+	
+	required_construction = construction_cost_monument
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+building_mosque_of_djenne = {
+	building_group = bg_monuments
+	texture = "gfx/interface/icons/building_icons/mosque_of_djenne.dds"
+	expandable = no
+	downsizeable = no
+	unique = yes
+	locator = "mosque_of_djenne_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { "building_construction_3x3_entity" }
+	entity_constructed = { "wonder_great_mosque_of_djenne_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 4
+	}
+	
+	production_method_groups = {
+		pmg_base_building_mosque_of_djenne
+	}
+	
+	required_construction = construction_cost_monument
+	
+	possible = {
+		state_region = s:STATE_EASTERN_MALI
+	}
+	
+	ai_value = 10000
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+# Decorative only
+
+building_machu_picchu = {
+	building_group = bg_monuments_hidden
+	texture = "gfx/interface/icons/building_icons/machu_picchu.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "machu_picchu_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { }
+	entity_constructed = { "wonder_machu_picchu_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 6
+	}
+	
+	production_method_groups = {
+		pmg_dummy
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+building_argebam = {
+	building_group = bg_monuments_hidden
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "argebam_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { }
+	entity_constructed = { "wonder_argebam_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 8
+	}
+	
+	production_method_groups = {
+		pmg_dummy
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+building_chichen_itza = {
+	building_group = bg_monuments_hidden
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "chichen_itza_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { }
+	entity_constructed = { "wonder_chichen_itza_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 4
+	}
+	
+	production_method_groups = {
+		pmg_dummy
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+building_easter_island_heads = {
+	building_group = bg_monuments_hidden
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "easter_island_heads_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { }
+	entity_constructed = { "wonder_easter_island_heads_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 6
+	}
+	
+	production_method_groups = {
+		pmg_dummy
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+building_eye_of_sahara = {
+	building_group = bg_monuments_hidden
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "eye_of_sahara_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { }
+	entity_constructed = { "wonder_eye_of_sahara_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 3
+	}
+	
+	production_method_groups = {
+		pmg_dummy
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+building_giza_necropolis = {
+	building_group = bg_monuments_hidden
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "giza_necropolis_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { }
+	entity_constructed = { "wonder_giza_necropolis_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 10
+	}
+	
+	production_method_groups = {
+		pmg_dummy
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+building_khaju_bridge = {
+	building_group = bg_monuments_hidden
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "khaju_bridge_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { }
+	entity_constructed = { "wonder_khaju_bridge_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 4
+	}
+	
+	production_method_groups = {
+		pmg_dummy
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+building_petra = {
+	building_group = bg_monuments_hidden
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "petra_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { }
+	entity_constructed = { "wonder_petra_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 3
+	}
+	
+	production_method_groups = {
+		pmg_dummy
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+### AP1 - models not present in basegame ###
+
+building_martandsuntemple = {
+	building_group = bg_monuments_hidden
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "monument_martandsuntemple_locator"
+	
+	entity_not_constructed = {monument_martandsuntemple_entity}
+	entity_under_construction = { }
+	entity_constructed = { "monument_martandsuntemple_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 6
+	}
+	
+	production_method_groups = {
+		pmg_dummy
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+building_wat_arun = {
+	building_group = bg_monuments_hidden
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "wat_arun_locator"
+	
+	entity_not_constructed = {"monument_watarun_entity"}
+	entity_under_construction = {"monument_watarun_entity"}
+	entity_constructed = {"monument_watarun_entity"}
+
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 3
+	}
+	
+	production_method_groups = {
+		pmg_dummy
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+building_power_bloc_statue = {
+
+	building_group = bg_monuments
+
+	city_type = city
+
+	levels_per_mesh = 1
+
+	expandable = no
+	
+	statue = yes
+	centerpiece_mesh_weight = 1
+
+	production_method_groups = {
+		pmg_base_building_power_bloc_statue
+	}
+
+	texture = "gfx/interface/icons/building_icons/building_powerblock_statue.dds"
+
+	required_construction = construction_cost_monument
+
+	can_build_government = {
+		always = yes
+	}
+
+	can_build_private = {
+		always = no
+	}	
+	
+	possible = {
+		owner = {
+			is_in_power_bloc = yes
+		}
+		has_dlc_feature = power_bloc_features
+	}
+
+	ai_value = {
+		value = 0
+		
+		if = {
+			limit = { 
+				is_incorporated = yes	
+				state_population >= 500000
+			}
+			
+			add = {
+				value = state_population
+				divide = 1000
+				max = 5000
+			}
+		}
+
+		if = {
+			limit = { is_capital = yes }
+			add = 2500
+		}		
+					
+		owner = {
+			if = {
+				limit = { is_power_bloc_leader = yes }
+				multiply = 2.0
+			}						
+			
+			if = {
+				limit = { country_rank < rank_value:major_power }
+				multiply = 0.0
+			}
+			else_if = {
+				limit = { country_rank < rank_value:great_power }
+				multiply = 0.5
+			}			
+		}
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}

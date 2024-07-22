@@ -1,0 +1,82 @@
+﻿company_agriculture_guild = {
+	icon = "gfx/interface/icons/company_icons/basic_colonial_plantations.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rye.dds"
+	
+	uses_dynamic_naming = no
+	
+	building_types = {  
+		building_manor_house
+	}
+
+	possible = {
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_manor_house
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_group_bg_agriculture_throughput_add = 0.5
+		building_group_bg_ranching_throughput_add = 0.5
+		building_group_bg_plantations_throughput_add = 0.5
+	}	
+}
+
+company_industrial_guild = {
+	icon = "gfx/interface/icons/company_icons/basic_mineral_mining.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	uses_dynamic_naming = no
+	
+	building_types = {
+		building_financial_district
+	}
+
+	possible = {
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_financial_district
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_group_bg_manufacturing_throughput_add = 0.5
+	}	
+}
+
+company_home_goods_guild = {
+	icon = "gfx/interface/icons/company_icons/basic_metalworks.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+	
+	uses_dynamic_naming = no
+	
+	building_types = {
+		building_trade_center
+		building_urban_center
+	}
+
+	possible = {
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_trade_center
+					is_building_type = building_urban_center
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_group_bg_urban_facilities_throughput_add = 0.5
+		building_group_bg_service_throughput_add = 0.5
+	}
+}
